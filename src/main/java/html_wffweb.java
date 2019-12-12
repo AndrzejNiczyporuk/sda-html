@@ -19,11 +19,8 @@ public class html_wffweb {
 		
 		System.out.println(html.toHtmlString());
 		//directly writes to file
-		html.toOutputStream(new FileOutputStream("filename.html"), "UTF-8");
-		
-		BufferedReader br = new BufferedReader(new FileReader("index.html"));
-		String readedStrona1 = org.apache.commons.io.IOUtils.toString(br);
-		br.close();
-		
+		html.toOutputStream(new FileOutputStream("wff_index.html"), "UTF-8");
+
+	
 	}
 }

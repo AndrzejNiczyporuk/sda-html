@@ -37,6 +37,12 @@
             <version>1.12.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.xmlet</groupId>
+            <artifactId>htmlflow</artifactId>
+            <version>3.3</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>

@@ -20,7 +20,7 @@ public class html_jsoup
 		Document docPP = Jsoup.connect("https://emonitoring.poczta-polska.pl/?numer=testp0").get();
 		System.out.println(docPP.title());
 		Elements events  = docPP.select("a[href]");
-		//Elements events  = docPP.select("*.zdarzenia_black");
+		Elements events2  = docPP.select("#zdarzenia_black");
 		for (Element event : events) {
 			//System.out.println(event.attr("zdarzenia_black"));
 			System.out.println(event.absUrl("href"));

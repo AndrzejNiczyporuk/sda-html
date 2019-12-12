@@ -32,11 +32,11 @@ public class html_maliogit {
 						ul)
 		).render();
 		
-		BufferedWriter bw = new BufferedWriter(new FileWriter("index.html"));
+		BufferedWriter bw = new BufferedWriter(new FileWriter("maliogit_index.html"));
 		bw.write(strona1);
 		bw.close();
 		
-		BufferedReader br = new BufferedReader(new FileReader("index.html"));
+		BufferedReader br = new BufferedReader(new FileReader("maliogit_index.html"));
 		String readedStrona1 = org.apache.commons.io.IOUtils.toString(br);
 		br.close();
 		
@@ -45,7 +45,7 @@ public class html_maliogit {
 		
 		
 		
-		BufferedWriter bw2 = new BufferedWriter(new FileWriter("index2.html"));
+		BufferedWriter bw2 = new BufferedWriter(new FileWriter("maliogit_index2.html"));
 		bw2.write(stronaHtml.toString().replaceAll("<!DOCTYPE html><html>",""));
 		bw2.close();
 		
